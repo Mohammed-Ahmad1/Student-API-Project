@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -53,7 +52,6 @@ namespace StudentApiClient
             
             //this will show all students after Updating student 2
             await GetAllStudents();
-
         }
 
         static async Task GetAllStudents()
@@ -86,8 +84,6 @@ namespace StudentApiClient
             }
         }
 
-
-
         static async Task GetPassedStudents()
         {
             try
@@ -118,7 +114,6 @@ namespace StudentApiClient
             }
         }
 
-
         static async Task GetAverageGrade()
         {
             try
@@ -142,7 +137,6 @@ namespace StudentApiClient
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
-
 
         static async Task GetStudentById(int id)
         {
@@ -175,7 +169,6 @@ namespace StudentApiClient
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
-
 
         static async Task AddStudent(Student newStudent)
         {
@@ -256,10 +249,7 @@ namespace StudentApiClient
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
-
     }
-
-
 
     public class Student
     {
